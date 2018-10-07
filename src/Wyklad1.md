@@ -123,11 +123,11 @@ $p^{zew}$ zależy od zmiennych innych niż stan układu, ale na przykład humor 
 
 Tak naprawdę powinniśmy pisać na ogólne formy różniczkowe zależące od reszty świata
 
-$$ DW = - p^{zew} (nie tylko parametry układu) $$
+$$ DW = - p^{zew} (\text{nie tylko parametry układu}) $$
 
-W w ten sposób mamy formę Pfaffa:
+W ten sposób mamy formę Pfaffa:
 
-$$ \dj W = -p (tylko od parametrów układu) $$
+$$ \dj W = -p (\text{tylko od parametrów układu}) $$
 
 ## Magnetyki
 Dla magnetycznych właściwości mamy całkowity dipolowy moment układu $\vec{M}$,
@@ -137,7 +137,7 @@ gdzie B to indukcja zewnętrznego pola magnetycznego, i trzeba by napisać $DW_{
 Jakbyśmy wyrazili $\vec{B}$ przez parametry układu (może temperaturę), 
 
 Dla właściwości elektrycznych
-$$ DW_{el} = \vec{E} \cdot d \vec{P} $$
+$$ DW_{el} = \vec{E} \cdot \vec{P} $$
 
 
 
@@ -146,7 +146,7 @@ Niech $x_1, .... x_n$ - parametry określające stan układu. Wtedy forma Pfaffa
 
 $$ \Sigma_{i=1}^n X_i(x_1, ..., x_n) dx_i $$
 
-## Druga zasada termodynamiki w duchu neo-gibbsowskim          # TODO CONTINUE
+## Druga zasada termodynamiki w duchu neo-gibbsowskim
 Istnienie entropii $S = S(U, V, N)$, co do której postulujemy:
 
 > Entropia przybiera wartość maksymalną w stanach równowagowych.
@@ -174,7 +174,7 @@ Postulujemy też addytywność entropii - entropia sumy układów jest równa su
 
 ## Temperatura termodynamiczna T
 
-W wielu wzorach w tym fragmencie N-ek powinno być wiele.
+*W wielu wzorach w tym fragmencie N-ek powinno być wiele.*
 
 Bierzemy $S = S(U, V, N_1, ..., N_r)$.
 
@@ -194,10 +194,8 @@ $$ dU =
 
 To są parametry ekstensywne.  Definiujemy parametry intensywne: 
 
-  133 Dla magnetycznych właściwości mamy całkowity dipolowy moment układu $\vec{M}$,
-
 $$ T =   (\frac{\partial U}{\partial S})_{V, N} $$
-$$ P = - (\frac{\partial U}{\partial V})_{S, N} $$
+$$ p = - (\frac{\partial U}{\partial V})_{S, N} $$
 $$ \mu_i =   (\frac{\partial U}{\partial N_i})_{S, V} $$
 
 Więc możemy napisać
@@ -207,13 +205,17 @@ $$ dU = T dS - p dV + \Sigma_{i=1}^r \mu_i dN_i $$
 W układzie zamkniętym $$ dN_i = 0 $$
 więc $$ dU = T dS - p dV $$
 
-Z drugiej strony w procesie kwazistatycznym $$ dU = \dj Q + \dj W = \dj Q - p dV $$
+Z drugiej strony w procesie kwazistatycznym
+
+ $$ dU = \dj Q + \dj W = \dj Q - p dV $$
 
 Więc
 
 $$ \dj Q = T dS $$
 
-$ \dj Q / T = dS $ jest różniczką zupełną i funkcją stanu.
+Zatem
+$$ dS = \frac{\dj Q}{T} $$
+jest różniczką zupełną i funkcją stanu.
 
 > *"Energia wszechświata jest stała; entropia wszechświata osiąga maksimum"* - Clausius z Koszalina, twórca entropii (lubimy go za to)
 
@@ -226,11 +228,12 @@ $$ dU = TdS - pdV + \mu dN $$
 Możemy też napisać...
 
 ### Związek podstawowy reprezentacji entropii
+> *Od autora notatek: przechodzę na notację z indeksami bo mam dość - indeks oznacza różniczkowanie, po czym nie różniczkujemy to ustalone.*
+
 $$ S = S(U, V, N) $$
 
-> Od autora notatek: przechodzę na notację z indeksami bo mam dość - indeks oznacza różniczkowanie, po czym nie różniczkujemy to ustalone
 
-$$ dS = S_U dU + S_V dV S_N + dN $$
+$$ dS = S_U dU + S_V dV + S_N dN $$
 
 
 
@@ -249,9 +252,9 @@ Obowiązuje gdy $T \to 0$.
 
 ### Wersja W. Nernsta
 
-Jeśli mamy entropię (funkcję T i jakichś parametrów, które oznaczamy X). Mamy proces przy stałym T, układ przechodzi od stanu $ X_1 $ do $ X_2 $. Wtedy
+Jeśli mamy entropię (funkcję T i jakichś parametrów, które oznaczamy X)
 
-$$ \lim_{ T \to 0} [ S( T, X_2) - S(T, X_1) ] = 0 $$
+$$ T = \text{const}, X_1 \to X_2: \lim_{ T \to 0} [ S( T, X_2) - S(T, X_1) ] = 0 $$
 
 ### Wersja M. Plancka
 
