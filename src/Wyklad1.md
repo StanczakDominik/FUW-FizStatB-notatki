@@ -87,7 +87,7 @@ Dla małych przejść
 
 $$ dU = \dj Q + \dj W $$
 
-gdzie $ \dj Q , \dj W $ to formy Pfaffa - nie są różniczkami zupełnymi bo zależy od drogi, w przeciwieństwie do $ dU $.
+Gdzie $ \dj Q , \dj W $ to formy Pfaffa - nie są różniczkami zupełnymi bo zależy od drogi, w przeciwieństwie do $ dU $.
 
 ## Procesy kwazistatyczne
 
@@ -97,14 +97,14 @@ ograniczenie.
 
 Tak naprawdę to jest definicja procesu *pseudostatycznego*.
 
-> Nie chcę tu państwa zamęczać, ale... chwila udręki...
+> Nie chcę tu państwa zamęczać, ale... Chwila udręki...
 
 Kwazistatyczny jest taki, gdzie praca wykonywana nad układem jest wykonywana tylko przez siły zachowujące układ w stanie równowagi.
 
 Przykład - naczynie z wodą i z wiatraczkiem, którym to wiatraczkiem kręcimy
 zewnątrz (wykonując pracę mechaniczną). Proces jest pseudostatyczny, bo
 działamy wbrew siłom tarcia, które nie utrzymują stanu w równowadze! Raczej
-sprowadzaja go do niej.
+sprowadzają go do niej.
 
 ## Zmiana objętości w naczyniu z płynem
 
@@ -119,13 +119,13 @@ I wtedy dopiero mamy znane
 
 $$ dU = \dj Q - p dV $$
 
-$p^{zew}$ zależy od zmiennych innych niż stan układu, ale np. humor ściskacza.
+$p^{zew}$ zależy od zmiennych innych niż stan układu, ale na przykład humor ściskacza.
 
 Tak naprawdę powinniśmy pisać na ogólne formy różniczkowe zależące od reszty świata
 
 $$ DW = - p^{zew} (nie tylko parametry układu) $$
 
-a w ten sposób mamy formę Pfaffa:
+W w ten sposób mamy formę Pfaffa:
 
 $$ \dj W = -p (tylko od parametrów układu) $$
 
@@ -146,14 +146,14 @@ Niech $x_1, .... x_n$ - parametry określające stan układu. Wtedy forma Pfaffa
 
 $$ \Sigma_{i=1}^n X_i(x_1, ..., x_n) dx_i $$
 
-## Druga zasada termodynamiki w duchu neoGibbsowskim
+## Druga zasada termodynamiki w duchu neo-gibbsowskim          # TODO CONTINUE
 Istnienie entropii $S = S(U, V, N)$, co do której postulujemy:
 
 > Entropia przybiera wartość maksymalną w stanach równowagowych.
 
 Weźmy układ izolowany złożony z dwóch podukładów. Stan równowagowy zdefiniowany przez ścianki.
 
-Teraz uwalniamy *więzy* - pozwalamy sciance wewnętrznej się ruszać, umożliwiamy
+Teraz uwalniamy *więzy* - pozwalamy ściance wewnętrznej się ruszać, umożliwiamy
 przepływ ciepła... - wtedy układ dąży do nowego stanu równowagi. Jakiego? Na to odpowiada drugi postulat:
 
 > Stan równowagi osiągnięty pod nieobecność więzów maksymalizuje entropię na zbiorze stanów równowagi z więzami (dotyczy układu izolowanego).
@@ -162,7 +162,7 @@ przepływ ciepła... - wtedy układ dąży do nowego stanu równowagi. Jakiego? 
 2. Zwalniamy więzy.
 3. Pytamy jaki jest stan równowagi teraz?
 4. Nowy stan równowagi odpowiada maksymalnej entropii wybranej na wszystkich
-możliwych stanach równowagi z więzami. Znajdujemy max. entropii, i to nam daje
+możliwych stanach równowagi z więzami. Znajdujemy maksimum entropii, i to nam daje
 parametry (U, V, N) stanu układu.
 
 Postulujemy też, że
@@ -193,6 +193,8 @@ $$ dU =
  (\frac{\partial U}{\partial N_i})_{S, V, N \neq N_i} dN_i $$
 
 To są parametry ekstensywne.  Definiujemy parametry intensywne: 
+
+  133 Dla magnetycznych właściwości mamy całkowity dipolowy moment układu $\vec{M}$,
 
 $$ T =   (\frac{\partial U}{\partial S})_{V, N} $$
 $$ P = - (\frac{\partial U}{\partial V})_{S, N} $$
@@ -245,7 +247,7 @@ Warto pamiętać:
 
 Obowiązuje gdy $T \to 0$.
 
-### Wersja W. Nernsta:
+### Wersja W. Nernsta
 
 Jeśli mamy entropię (funkcję T i jakichś parametrów, które oznaczamy X). Mamy proces przy stałym T, układ przechodzi od stanu $ X_1 $ do $ X_2 $. Wtedy
 
